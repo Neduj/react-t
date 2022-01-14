@@ -2,20 +2,10 @@ import './ExpenseFilterList.css';
 import ExpenseFilterListLi from "../ExpenseFilterListLi/ExpenseFilterListLi";
 
 const ExpenseFilterList = () => {
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     return (
         <ul>
-            <ExpenseFilterListLi name="January"/>
-            <ExpenseFilterListLi name="February"/>
-            <ExpenseFilterListLi name="March"/>
-            <ExpenseFilterListLi name="April"/>
-            <ExpenseFilterListLi name="May"/>
-            <ExpenseFilterListLi name="June"/>
-            <ExpenseFilterListLi name="July"/>
-            <ExpenseFilterListLi name="August"/>
-            <ExpenseFilterListLi name="September"/>
-            <ExpenseFilterListLi name="October"/>
-            <ExpenseFilterListLi name="November"/>
-            <ExpenseFilterListLi name="December"/>
+            {months.map((monthName) => <ExpenseFilterListLi name={monthName}/>)}
         </ul>
     )
 
