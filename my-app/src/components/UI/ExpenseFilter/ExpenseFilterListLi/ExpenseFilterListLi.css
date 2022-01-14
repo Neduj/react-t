@@ -1,0 +1,12 @@
+.list-column {
+    height: 95px;
+    background: #16d2a5;
+    width: 15px;
+    border-radius: 14px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
