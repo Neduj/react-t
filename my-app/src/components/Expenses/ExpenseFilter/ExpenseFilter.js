@@ -10,8 +10,8 @@ const ExpenseFilter = (props) => {
     return (
         <section className="expense-filter__container">
             <section className="filter-select">
-                <select onChange={onValueChange}>
-                    <option value=''>Select a year to filter</option>
+                <select onChange={onValueChange} value={props.initSelectedYear}>
+                    <option value='' disabled>Select a year to filter</option>
                     <option value={yearsFilter[0]}>{yearsFilter[0]}</option>
                     <option value={yearsFilter[1]}>{yearsFilter[1]}</option>
                     <option value={yearsFilter[2]}>{yearsFilter[2]}</option>
