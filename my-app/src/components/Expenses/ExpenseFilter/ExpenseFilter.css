@@ -1,0 +1,12 @@
+.expense-filter__container {
+    background: darkslateblue;
+    width: 100%;
+    height: 150px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 14px;
+}
+
+ul, li {
+    display: inline-block;
+}
